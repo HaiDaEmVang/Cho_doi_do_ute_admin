@@ -51,7 +51,7 @@ const TableTwo: React.FC<TableTwoProps> = ({ data, handleEdit , deleteDichVu}) =
             <div className="col-span-2 flex items-center">
               <div className="flex flex-col gap-4 sm:flex-row sm:items-center">
                 <div className="w-15 h-15 rounded-md overflow-hidden object-cover" >
-                  <img src={product.productImgs[0].urlImg} alt="Product" />
+                  <img src={product.productImgs[0] === undefined ? "": product.productImgs[0].urlImg} alt="Product" />
                 </div>
                 <p className="text-sm text-black dark:text-white">
                   {product.title}

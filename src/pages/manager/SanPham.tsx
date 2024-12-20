@@ -122,7 +122,7 @@ const DichVu: React.FC = () => {
   }, []);
 
   useEffect(() => {
-    setDataView(data)
+    setDataView(data.filter(item => item.id < 10))
   }, [data])
 
   useEffect(() => {
